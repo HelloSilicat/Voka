@@ -1,6 +1,6 @@
 .row-center{
     text-align:center;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .col-center {
     display:inline-block;
@@ -9,30 +9,38 @@
 }
 
 .title-font {
-    font-size: 100px;
+    font-size: 50px;
     font-weight: 500;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .progress-font {
-    font-size: 20px;
-    font-weight: 100;
+    color: grey;
+    font-size: 30px;
+    font-weight: 50;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .voc-font {
-    font-size: 30px;
+    font-size: 120px;
     font-weight: 100;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .meaning-font {
-    font-size: 20px;
-    font-weight: 100;
+    color: grey;
+    font-size: 50px;
+    font-weight: 50;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-display: none;
 }
 
 .meaning {
     visibility: visible;
+}
+
+.my_btn, .my_btn:hover, .my_btn:focus {
+    border: none !important;
+    color: grey;
+    font-size:200px;
 }
