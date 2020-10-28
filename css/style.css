@@ -1,0 +1,38 @@
+.row-center{
+    text-align:center;
+    margin-top: 50px;
+}
+.col-center {
+    display:inline-block;
+    float:none;
+    text-align:center;
+}
+
+.title-font {
+    font-size: 100px;
+    font-weight: 500;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.progress-font {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.voc-font {
+    font-size: 30px;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.meaning-font {
+    font-size: 20px;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-display: none;
+}
+
+.meaning {
+    visibility: visible;
+}
