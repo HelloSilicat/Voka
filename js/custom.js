@@ -6,7 +6,26 @@ var currentIndex = 0;
 var totalIndex = 0;
 var voc = "-";
 var meaning = "-";
+var timer;
 /*******************************/
+
+function shuffleList() {
+	let index = -1;
+	let length = vocList.length;
+    let last_index = length - 1;
+	let size = length;
+     
+    while (++index < size) {
+    	var rand = index + Math.floor( Math.random() * (last_index - index + 1))
+        let value = vocList[rand];
+        vocList[rand] = vocList[index];
+        vocList[index] = value;
+		
+		value = meaningList[rand];
+		meaningList[rand] = meaningList[index];
+		meaningList[index] = value;
+    }
+}
 
 
 function update() {
@@ -32,14 +51,16 @@ function onPlay() {
 
     if (isPlay) {
         // setTimeout("mainLoop()", 1000);
-        mainLoop();
+	mainLoop();
     } else {
+        clearTimeout(timer);
         if (currentIndex == 1) {
             currentIndex = totalIndex;
         } else {
             currentIndex--;
         }
         update();
+        // currentIndex = currentIndex % totalIndex + 1;
     }
 }
 
@@ -47,8 +68,11 @@ function mainLoop() {
     if (!isPlay) {
         return;
     }
+	if (currentIndex == 1) {
+		shuffleList();
+	}
     update();
-    setTimeout("mainLoop()", 1000);
+    timer = setTimeout("mainLoop()", 2000);
     currentIndex = currentIndex % totalIndex + 1;
 }
 
@@ -63,7 +87,7 @@ function checkEncoding(base64Str) {
 
 function loadList() {
     let request = new XMLHttpRequest();
-    let url = "http://localhost:9991/test.csv";
+    let url = "http://39.97.247.132:9991/test.csv";
     request.open('GET', url, true);
     request.responseType = 'blob';
 

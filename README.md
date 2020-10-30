@@ -2,6 +2,10 @@
 Extreme tools for memorizing vocabularies.
 
 
+# Feature
+- Auto play to force concentration
+- Shuffle each round 
+
 # Usage
 1. Install python/nginx on your server.
 2. `git clone https://github.com/HelloSilicat/Voka.git && cd Voka`

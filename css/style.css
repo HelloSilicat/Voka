@@ -22,16 +22,16 @@
 }
 
 .voc-font {
-    font-size: 120px;
+    font-size: 100px;
     font-weight: 100;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .meaning-font {
     color: grey;
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 50;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-display: none;
 }
 
