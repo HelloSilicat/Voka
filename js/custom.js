@@ -7,6 +7,7 @@ var totalIndex = 0;
 var voc = "-";
 var meaning = "-";
 var timer;
+var interval = 1500;
 /*******************************/
 
 function shuffleList() {
@@ -72,7 +73,7 @@ function mainLoop() {
 		shuffleList();
 	}
     update();
-    timer = setTimeout("mainLoop()", 2000);
+    timer = setTimeout("mainLoop()", interval);
     currentIndex = currentIndex % totalIndex + 1;
 }
 
