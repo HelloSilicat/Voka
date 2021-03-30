@@ -19,4 +19,4 @@ Extreme tools for memorizing vocabularies.
 6. Visit your remote server by 80 port(default).
 
 # Demo
-<img src="demo.gif" alt="Demo.gif" style="zoom:100%;" />
+<img src="demo.gif" alt="Demo.gif" style="zoom:60%;" />
