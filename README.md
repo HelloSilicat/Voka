@@ -9,7 +9,7 @@ Extreme tools for memorizing vocabularies.
 
 # Usage
 1. Install python/nginx on your server.
-2. `git clone https://github.com/HelloSilicat/Voka.git && cd Voka`
+2. `git clone https://github.com/peijl1998/Voka.git && cd Voka`
 3. Prepare your voc.csv(like `assets/test.csv`) in `Voka/assets/`
 4. Configure server ip and voc file name in `js/custom.js`, like:
    ```js
